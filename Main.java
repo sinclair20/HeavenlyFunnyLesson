@@ -1,4 +1,4 @@
-class Main {
+class 큰수의법칙 {
   public static void main(String[] args) {
     // N 원. 단, N은 항상 10의 배수.
     int n = 1260;
@@ -8,6 +8,7 @@ class Main {
     for (int coin : coinTypes) {
       count += n;
       n %= coin;
+      System.out.println(n +", "+ coin +", "+6);
     }
 
     System.out.println(count);
